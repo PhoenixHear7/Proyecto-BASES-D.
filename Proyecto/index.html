@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRONTOMUEBLE - Gestión de Ventas!</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>PRONTOMUEBLE - Sistema de Gestión de Ventas</h1>
+
+    <div class="main-container">
+        
+        <aside class="sidebar left-sidebar">
+            <img src="Imagenes/SALA.jpg" alt="Imagen Mueble" class="sidebar-img">
+            <img src="Imagenes/muebles1.webp" alt="Imagen Mueble" class="sidebar-img">
+            <img src="Imagenes/mueble2.jpg" alt="Imagen Mueble" class="sidebar-img">
+            <img src="Imagenes/muebles2.jpeg" alt="Imagen Mueble" class="sidebar-img">
+            <img src="Imagenes/mueble3.webp" alt="Imagen Mueble" class="sidebar-img">
+        </aside>
+    
+        
+        <div class="content-center">
+            <div class="content">
+                <section id="proveedores">
+                    <h2>Registro de Proveedores</h2>
+                    <form id="formProveedor">
+                        <input type="text" id="nombreProveedor" placeholder="Nombre del Proveedor" required>
+                        <input type="text" id="direccionProveedor" placeholder="Dirección" required>
+                        <input type="tel" id="telefonoProveedor" placeholder="Teléfono" required>
+                        <input type="text" id="contactoProveedor" placeholder="Persona de Contacto" required>
+                        <input type="text" id="tipoMuebleProveedor" placeholder="Tipos de Muebles (ej. cocina, baño)" required>
+                        <button type="button" onclick="registrarProveedor()">Guardar Proveedor</button>
+                    </form>
+                </section>
+    
+     
+                <section id="muebles">
+                    <h2>Registro de Muebles</h2>
+                    <form id="formMueble">
+                        <input type="text" id="tipoMueble" placeholder="Tipo de Mueble" required>
+                        <input type="text" id="materialMueble" placeholder="Material" required>
+                        <input type="text" id="dimensionesMueble" placeholder="Dimensiones" required>
+                        <input type="text" id="colorMueble" placeholder="Color" required>
+                        <input type="number" id="precioMueble" placeholder="Precio" required>
+                        <button type="button" onclick="registrarMueble()">Guardar Mueble</button>
+                    </form>
+                </section>
+    
+                
+                <section id="clientes">
+                    <h2>Registro de Clientes</h2>
+                    <form id="formCliente">
+                        <input type="text" id="idCliente" placeholder="ID del Cliente" required>
+                        <input type="text" id="nombreCliente" placeholder="Nombre del Cliente" required>
+                        <input type="tel" id="telefonoCliente" placeholder="Teléfono de Contacto" required>
+                        <input type="text" id="direccionCliente" placeholder="Dirección de Correspondencia" required>
+                        <input type="email" id="emailCliente" placeholder="Correo Electrónico" required>
+                        <button type="button" onclick="registrarCliente()">Guardar Cliente</button>
+                    </form>
+                </section>
+    
+                
+                <section id="reportes">
+                    <h2>Reportes Mensuales</h2>
+                    <button type="button" onclick="generarReporte()">Generar Reporte</button>
+                    <div id="reporteContenido"></div>
+                </section>
+            </div>
+        </div>
+    
+        <aside class="sidebar right-sidebar">
+            <img src="Imagenes/SALA.jpg" alt="Imagen Mueble" class="sidebar-img">
+            <img src="Imagenes/muebles1.webp" alt="Imagen Mueble" class="sidebar-img">
+            <img src="Imagenes/mueble2.jpg" alt="Imagen Mueble" class="sidebar-img">
+            <img src="Imagenes/muebles2.jpeg" alt="Imagen Mueble" class="sidebar-img">
+            <img src="Imagenes/mueble3.webp" alt="Imagen Mueble" class="sidebar-img">
+        </aside>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
